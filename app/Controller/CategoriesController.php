@@ -26,6 +26,7 @@ class CategoriesController extends AppController {
 	    
 	    if (!$category) {
 	    	echo '';
+	    	echo 'awerer';
 	        throw new NotFoundException(__('Invalid category'));
 	    }
 	    
