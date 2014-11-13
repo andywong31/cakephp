@@ -19,7 +19,7 @@ class CategoriesController extends AppController {
 
 	public function edit($id = null) {		
 		if (!$id) {
-	        throw new NotFoundException(__('Invalid category'));
+	        throw new NotFoundException(__('Invalid category')); 
 	    }
 
 	    $category = $this->Category->findById($id);
