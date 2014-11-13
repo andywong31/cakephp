@@ -24,9 +24,7 @@ class CategoriesController extends AppController {
 
 	    $category = $this->Category->findById($id);
 	    
-	    if (!$category) {
-	    	echo '';
-	    	echo 'awerer';
+	    if (!$category) {	    	
 	        throw new NotFoundException(__('Invalid category'));
 	    }
 	    
